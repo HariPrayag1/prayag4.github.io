@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="js/styles.css">
+    <title>UiBrains Dashboard</title>
+</head>
+<body id="pr">
+<!--navbar-->
+<nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+    <div class="container">
+        <a href="index.html" class="navbar-brand text-warning"><i class="fa fa-snowflake"></i> Uibrains</a>
+        <button class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="uinavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa fa-chart-bar text-muted"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tasks.html" class="nav-link">
+                        <i class="fa fa-list text-muted"></i> Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="categories.html" class="nav-link">
+                        <i class="fa fa-sitemap text-muted"></i> Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="employees.html" class="nav-link">
+                        <i class="fa fa-users text-muted"></i> Employees</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown">
+                        <i class="fa fa-sign-in-alt text-muted"></i> Prayag <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fa fa-user-circle"></i> Profile
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="fa fa-cog"></i> Settings
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">
+                        <i class="fa fa-sign-out-alt text-muted"></i> SignOut</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--dashboard section-->
+<section class="bg-danger p-2 text-white">
+    <div class="container">
+        <div class="row animated slideInLeft">
+            <div class="col">
+                <h1><i class="fa fa-user-circle"></i> SignOut</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="logreg-forms">
+    <form class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
+        <div class="social-login">
+            <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
+            <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>
+        </div>
+        <p style="text-align:center"> OR  </p>
+        <div class="input-group">
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+        </div>
+
+        <div class="input-group">
+            <button class="btn btn-md btn-rounded btn-block form-control submit" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+        </div>
+
+        <a href="#" id="forgot_pswd">Forgot password?</a>
+        <hr>
+        <!-- <p>Don't have an account!</p>  -->
+        <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</button>
+    </form>
+
+    <form action="#" class="form-reset">
+        <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+        <button class="btn btn-primary btn-block" type="submit">Reset Password</button>
+        <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
+    </form>
+
+    <form action="#" class="form-signup">
+        <div class="social-login">
+            <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign up with Facebook</span> </button>
+        </div>
+        <div class="social-login">
+            <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign up with Google+</span> </button>
+        </div>
+
+        <p style="text-align:center">OR</p>
+
+        <input type="text" id="user-name" class="form-control" placeholder="Full name" required="" autofocus="">
+        <input type="email" id="user-email" class="form-control" placeholder="Email address" required autofocus="">
+        <input type="password" id="user-pass" class="form-control" placeholder="Password" required autofocus="">
+        <input type="password" id="user-repeatpass" class="form-control" placeholder="Confirm Password" required autofocus="">
+
+        <div class="input-group">
+            <button class="btn btn-md btn-block submit" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
+        </div>
+
+        <a href="#" id="cancel_signup"><i class="fa fa-angle-left"></i> Back</a>
+    </form>
+    <br>
+
+</div>
+<!-- Main Footer -->
+<footer class="bg-dark text-white p-3 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Copyright &copy; 2018 , UiBrains.com</h3>
+                <h6>All Rights Reserved</h6>
+                <h6>Developed & Maintained by
+                    <a class="text-warning" href="https://github.com/prayag-singh" target="_blank">
+                        <i class="fa fa-user-circle"></i> prayag singh
+                    </a>
+                </h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- BODY ENDS -->
+<script src="js/admin.java.js"></script>
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+<script src="js/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
+</body>
+</html>
